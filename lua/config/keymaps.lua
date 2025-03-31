@@ -23,6 +23,8 @@ vim.keymap.set("n", "g<leader>dec", function()
   require("dial.map").manipulate("decrement", "gnormal")
 end)
 
+vim.keymap.set("n", "<leader>exp", "<C-w>h", { desc = "Focus File Tree" })
+vim.keymap.set("n", "<leader>cod", "<C-w>l", { desc = "Focus Code Window" })
 -- Persistent floating terminal instance
 local float_term = Terminal:new({
   direction = "float",
